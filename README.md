@@ -1,7 +1,7 @@
 [![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
 
 # Overview Project
-In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+This project will deploy a python flask webapp to Azure Cloud Services with the help of Continuous Integration and Continuous Delivery. It shows you the ability how to build a Github repository for source control with Azure Cloud Shell. Github Actions will be used to perform an automatic build, test and lint process that is later integrated in Azure Pipelines to enable Continuous Delivery to Azure App Service. 
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/building-a-ci-cd-pipeline.png)
 
@@ -111,10 +111,23 @@ Please have a look to the [Official Microsoft Documentation](https://docs.micros
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/resource-group.png)
 
+Last but not least you can check the logfiles from the application in the browser:
+
+    https://<yourappname>.scm.azurewebsites.net/api/logs/docker
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/access-logfiles.png)
+
+or in Azure Cloud Shell via:
+
+    az webapp log tail
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/access-logfiles2.png)
+
 # Enhancements
 
-* setup different environments (Development, Integration, Production)
-* integrate alerts 
+* setup different environments (Development, Staging, Production)
+* enable monitoring & alerting
+* migrate to another Build-Server for cost-reduction (e.g. Jenkins (OpenSource))  
 
 # Demo
 <TODO: Add link Screencast on YouTube>
