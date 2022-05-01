@@ -55,4 +55,8 @@ Replace the default template with:
           run: |
             make test
 
+Commit the change and verify Remote Tests pass
+
 [![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/github-actions.png)
