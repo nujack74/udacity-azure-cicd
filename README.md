@@ -52,11 +52,11 @@ The following commands will install the application in your Azure Cloud Shell en
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/webapp-deployment.png)
 
-When the application is up and running you can browse to https://<yourappname>.azurewebsites.net and see the following page:
+When the application is up and running you can browse to https://\<yourappname\>.azurewebsites.net and see the following page:
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/webapp-test.png)
     
-Furthermore you can check the application with the script make_predict_azure_app.sh. Change the URL in line 28 with https://<yourappname>.azurewebsites.net:$PORT/predict and get the following result:
+Furthermore you can check the application with the script make_predict_azure_app.sh. Change the URL in line 28 with https://\<yourappname\>.azurewebsites.net:$PORT/predict and get the following result:
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/make_predict.png)
     
@@ -97,9 +97,17 @@ Commit the change and verify remote tests pass.
 
 ## SetUp Azure Pipelines
 
+For references please have a look to the [Official Microsoft Documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops). 
+
 * In the Azure-Portal go to "Azure DevOps Organizations" and create a new project. Make sure it uses Git-based version control.
 * Create a pipeline: Select GitHub for the Code-Location and the related repository.
 * Configure your Pipeline: Select "Python to Linux Web App on Azure"
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/pipeline-job.png)
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/app-services.png)
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/resource-group.png)
 
 # Enhancements
 <TODO: A short description of how to improve the project in the future>
