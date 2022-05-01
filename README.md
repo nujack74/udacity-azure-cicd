@@ -1,12 +1,16 @@
-# Overview
-t.b.d.
+[![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
+
+# Overview Project
+In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/building-a-ci-cd-pipeline.png)
 
 ## ProjectPlan
 * [Spreadsheet](https://docs.google.com/spreadsheets/d/1FA3MArdMtnCW5rF1VJdscKvWYC5g4pB0N9Cg3Xw607o "Project Plan")
 * [Trello board](https://trello.com/b/k8KOigjO/udacity-cloud-devops "Kanban Board")
 
 # Instructions
-## Architecture
+## Overview Architecture
 ### Azure Cloud Shell
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/azure-cloud-shell.png)
@@ -91,13 +95,11 @@ Replace the default template with:
 
 Commit the change and verify remote tests pass.
 
-[![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
-
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/github-actions.png)
 
 ## SetUp Azure Pipelines
 
-For references please have a look to the [Official Microsoft Documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops). 
+Please have a look to the [Official Microsoft Documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
 * In the Azure-Portal go to "Azure DevOps Organizations" and create a new project. Make sure it uses Git-based version control.
 * Create a pipeline: Select GitHub for the Code-Location and the related repository.
@@ -110,7 +112,9 @@ For references please have a look to the [Official Microsoft Documentation](http
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/resource-group.png)
 
 # Enhancements
-<TODO: A short description of how to improve the project in the future>
+
+* setup different environments (Development, Integration, Production)
+* integrate alerts 
 
 # Demo
 <TODO: Add link Screencast on YouTube>
