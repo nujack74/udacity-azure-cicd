@@ -5,7 +5,7 @@ BlaBlaBla
 * [Trello board](https://trello.com/b/k8KOigjO/udacity-cloud-devops "Kanban Board")
 
 # Instructions
-## Set up Azure Cloud Shell
+## SetUp Azure Cloud Shell
 ### Create SSH keys
 
 Launch an Azure Cloud Shell environment and create new ssh-keys:
@@ -25,3 +25,34 @@ The file id_rsa.pub contains the public key that needs to be uploaded to your Gi
     source .venv/bin/activate
 
 ### Install and run
+
+## SetUp GitHub Actions
+Go to your Github Account and enable Github Actions (GitHub > Actions > set up a workflow yourself).
+Replace the default template with:
+
+    name: Python application test with Github Actions
+    
+    on: [push]
+    
+    jobs:
+      build:
+    
+        runs-on: ubuntu-latest
+    
+        steps:
+        - uses: actions/checkout@v2
+        - name: Set up Python 3.5
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.5
+        - name: Install dependencies
+          run: |
+            make install
+        - name: Lint with pylint
+          run: |
+            make lint
+        - name: Test with pytest
+          run: |
+            make test
+
+[![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
