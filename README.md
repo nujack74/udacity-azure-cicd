@@ -1,10 +1,24 @@
-# OverView
-BlaBlaBla
+# Overview
+t.b.d.
+
 ## ProjectPlan
 * [Spreadsheet](https://docs.google.com/spreadsheets/d/1FA3MArdMtnCW5rF1VJdscKvWYC5g4pB0N9Cg3Xw607o "Project Plan")
 * [Trello board](https://trello.com/b/k8KOigjO/udacity-cloud-devops "Kanban Board")
 
 # Instructions
+## Architecture Overview
+### Azure Cloud Shell
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/azure-cloud-shell.png)
+
+### Azure CI
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/ci-diagram.png)
+
+### Azure CD
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/cd-diagram.png)
+
 ## SetUp Azure Cloud Shell
 ### Create SSH keys
 
@@ -25,6 +39,8 @@ The file id_rsa.pub contains the public key that needs to be uploaded to your Gi
     source .venv/bin/activate
 
 ### Install and run
+
+t.b.d.
 
 ## SetUp GitHub Actions
 Go to your Github Account and enable Github Actions (GitHub > Actions > set up a workflow yourself).
@@ -60,3 +76,11 @@ Commit the change and verify Remote Tests pass
 [![Python application test with Github Actions](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml/badge.svg)](https://github.com/nujack74/udacity-azure-cicd/actions/workflows/main.yml)
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/github-actions.png)
+
+## SetUp Azure Pipelines
+
+# Enhancements
+<TODO: A short description of how to improve the project in the future>
+
+# Demo
+<TODO: Add link Screencast on YouTube>
