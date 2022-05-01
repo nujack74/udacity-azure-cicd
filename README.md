@@ -6,7 +6,7 @@ t.b.d.
 * [Trello board](https://trello.com/b/k8KOigjO/udacity-cloud-devops "Kanban Board")
 
 # Instructions
-## Architecture Overview
+## Architecture
 ### Azure Cloud Shell
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/azure-cloud-shell.png)
