@@ -131,7 +131,8 @@ or in Azure Cloud Shell via:
 
 # Demo
 
-Youtube-Link: https://youtu.be/gXSLs6lHEKU (I'm sorry about the poor quality but this was my first attempt with video creation). 
+Youtube-Link: https://youtu.be/gXSLs6lHEKU (I'm sorry about the poor quality but this was my first attempt with video creation).
+
 If you would like to see the video in better quality please download it from my Google-drive: https://drive.google.com/file/d/1wmHbsAXm3EArdcAwCcdGPzCLQOPfZerr/view?usp=sharing
 
 
