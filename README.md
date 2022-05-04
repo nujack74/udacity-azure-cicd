@@ -123,6 +123,23 @@ or in Azure Cloud Shell via:
 
 ![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/access-logfiles2.png)
 
+## Locust
+
+For performance tests you can use the open source load testing tool [Locust](https://locust.io/).
+
+Install and Run Locust:
+
+    pip3 install locust
+    locust
+
+Once you’ve started Locust, open up a browser and point it to http://localhost:8089
+
+Now enter the URL of the running webapp-service https://\<yourappname\>.azurewebsites.net plus parameters for "users" and "spawn rate":
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/locust-parameter.png)
+
+![image](https://github.com/nujack74/udacity-azure-cicd/blob/main/Screenshots/locust.png)
+
 # Enhancements
 
 * setup different environments (Development, Staging, Production)
